@@ -79,4 +79,27 @@
                 return "Cor inválida.";
         }
     }
+
+    function exercicio06($num) {
+        return "O antecessor de $num é: " . ($num - 1);
+    }
+
+    function exercicio08($brancos, $validos, $nulos, $eleitores){
+        if (($brancos + $validos + $nulos) == $eleitores){
+            $pbrancos = porcentagem($brancos,$eleitores);
+            $pvalidos = porcentagem($validos,$eleitores);
+            $pnulos = porcentagem($nulos,$eleitores);
+            return "votos brancos: $pbrancos%\n
+                    votos nulos: $pnulos%\n
+                    votos validos: $pvalidos%";
+        }else{
+            return "total de eleitores é diferente do total";
+        }
+    }  //fim do método
+
+    function porcentagem($total,$eleitores){
+        return($total * 100)/$eleitores;
+    } //fim do método
+ 
 ?>
+

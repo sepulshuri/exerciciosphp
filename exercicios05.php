@@ -26,14 +26,13 @@
         <label class="form-label">Resultado:</label>
         <textarea class="form-control" rows="5" readonly>
             <?php
-                // Incluindo a função de preço
-                include 'funcoes.php'; // Certifique-se que o caminho do arquivo está correto
+                
+                include 'funcoes.php'; 
 
-                // Recebe a cor do CD via POST e chama a função
                 $cor = $_POST['cor'] ?? null;
 
                 if ($cor) {
-                    echo exercicio05($cor); // Chama a função corretamente
+                    echo exercicio05($cor); 
                 }
             ?>
         </textarea>
